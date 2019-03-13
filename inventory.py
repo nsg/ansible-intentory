@@ -53,7 +53,7 @@ def print_json(data):
 # Load the YAML file
 def load_file(file_name):
     with open(file_name, 'r') as fh:
-        return yaml.load(fh)
+        return yaml.full_load(fh)
 
 def get_yaml(file_name):
     script_path = os.path.dirname(os.path.realpath(__file__))
